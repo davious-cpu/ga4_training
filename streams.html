@@ -509,13 +509,13 @@ https://templatemo.com/tm-579-cyborg-gaming
   <script src="assets/js/custom.js"></script>
 
 <!-- Testing for purchase PART   -->
-    <script>
-    document.getElementById("purchase").addEventListener("click", function () {
-        gtag("event", "purchase", {
-                // This purchase event uses a different transaction ID
+                  // This purchase event uses a different transaction ID
                 // from the previous purchase event so Analytics
                 // doesn't deduplicate the events.
                 // Learn more: https://support.google.com/analytics/answer/12313109
+    <script>
+    document.getElementById("purchase").addEventListener("click", function () {
+        gtag("event", "purchase", {
                 transaction_id: "T_12345_2",
                 affiliation: "Web Game",
                 value: 25.42,
